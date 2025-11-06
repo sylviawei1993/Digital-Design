@@ -1,0 +1,13 @@
+module lcd_driver(
+    input clk,
+    input rst_n,
+    input [7:0] value,
+    output reg [7:0] lcd_data,
+    output reg lcd_rs,
+    output reg lcd_rw,
+    output reg lcd_e
+);
+    // 简化结构：仅定义接口
+    // 在实际实验板上由提供的LCD控制模块驱动
+    // 可以直接输出固定信息 “DAC IN=XXX”
+endmodule
